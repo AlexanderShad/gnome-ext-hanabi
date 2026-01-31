@@ -334,12 +334,10 @@ function prefsRowFitMode(window, prefsGroup) {
     const settings = window._settings;
     const title = _('Fit Mode');
     const subtitle = _('Control how wallpaper fits within the monitor');
-    const tooltip = _(`
-    <b>Fill</b>: Stretch the wallpaper to fill the monitor.
+    const tooltip = _(`<b>Fill</b>: Stretch the wallpaper to fill the monitor.
     <b>Contain</b>: Scale the wallpaper to fit the monitor (keep aspect ratio).
     <b>Cover</b>: Scale the wallpaper to cover the monitor (keep aspect ratio).
-    <b>Scale-down</b>: Scale down the wallpaper to fit the monitor if needed, otherwise keep its original size.
-    `);
+    <b>Scale-down</b>: Scale down the wallpaper to fit the monitor if needed, otherwise keep its original size.`);
 
     const items = Gtk.StringList.new([
         _('Fill'),
@@ -377,11 +375,9 @@ function prefsRowPauseOnMaximizeOrFullscreen(window, prefsGroup) {
     const settings = window._settings;
     const title = _('Pause on Maximize or Fullscreen');
     const subtitle = _('Pause playback when there is maximized or fullscreen window');
-    const tooltip = _(`
-    <b>Never</b>: Disable this feature.
+    const tooltip = _(`<b>Never</b>: Disable this feature.
     <b>Any Monitor</b>: Pause playback when there is maximized or fullscreen window on any monitor.
-    <b>All Monitors</b>: Pause playback when there are maximized or fullscreen windows on all monitors.
-    `);
+    <b>All Monitors</b>: Pause playback when there are maximized or fullscreen windows on all monitors.`);
 
     const items = Gtk.StringList.new([
         _('Never'),
@@ -413,11 +409,9 @@ function prefsRowPauseOnBattery(window, prefsGroup) {
     const settings = window._settings;
     const title = _('Pause on Battery');
     const subtitle = _('Pause playback when the device is on battery or the battery is low');
-    const tooltip = _(`
-    <b>Never</b>: Disable this feature.
+    const tooltip = _(`<b>Never</b>: Disable this feature.
     <b>Low Battery</b>: Pause playback when the device is on low battery (below the threshold).
-    <b>Always</b>: Pause playback when the device is on battery.
-    `);
+    <b>Always</b>: Pause playback when the device is on battery.`);
 
     const items = Gtk.StringList.new([
         _('Never'),
@@ -449,11 +443,9 @@ function prefsRowChangeWallpaperMode(window, prefsGroup) {
     const settings = window._settings;
     const title = _('Change Wallpaper Mode');
     const subtitle = _('Control how to change wallpapers automatically');
-    const tooltip = _(`
-    <b>Sequential:</b> Preserve the directory sequence (descending order).
+    const tooltip = _(`<b>Sequential:</b> Preserve the directory sequence (descending order).
     <b>Inverse Sequential:</b> Retrieve wallpapers in the opposite sequence (ascending order).
-    <b>Random:</b> Randomly select wallpapers from the directory.
-    `);
+    <b>Random:</b> Randomly select wallpapers from the directory.`);
 
     const items = Gtk.StringList.new([
         _('Sequential'),
